@@ -61,7 +61,6 @@ speedZ, speedX = 0, 0
 myCube = shapes.Cube()
 myPrism = shapes.Prism()
 while True:
-    print(thZ)
     screen.fill(BLACK)
     screen.blit(keys, (10, 475))
     screen.blit(axis_legend, (470, 20))
