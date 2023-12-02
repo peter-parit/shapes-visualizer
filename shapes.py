@@ -78,7 +78,7 @@ def update(shape, r, locations, screen):
         pg.draw.line(screen, WHITE, locations[pos[0]], locations[pos[1]], 4)
 
 
-def show_axis(r, screen):  # recheck coordinates
+def show_axis(r, screen):
     locations = []
     points = size * np.array([
         [2, 0, 0],
