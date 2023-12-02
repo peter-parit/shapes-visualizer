@@ -83,7 +83,7 @@ while True:
                 speedX += 0.003
             elif event.key == K_a:
                 axis = -axis  # toggle axis
-            elif event.key == K_s:
+            elif event.key == K_s:  # change shapes
                 s = -s
         elif event.type == KEYUP:
             if event.key in (K_LEFT, K_RIGHT):
