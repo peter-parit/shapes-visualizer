@@ -1,3 +1,5 @@
+# Parit Vacharaskunee 6580209
+# Project for ICCS 205 Numerical Methods, MUIC
 import pygame as pg
 from pygame.locals import *
 from sys import exit
