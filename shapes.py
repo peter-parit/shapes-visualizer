@@ -66,7 +66,6 @@ class Prism:
 
 def update(shape, r, locations, screen):
     for point in shape.vertices:
-        # R = calc_r(thX, thY, thZ)  # update rotation
         rotation = np.matmul(point, r)
         px, py = rotation[0], rotation[2]
 
@@ -81,7 +80,7 @@ def show_axis(r, screen):  # recheck coordinates
     locations = []
     points = size * np.array([
         [2, 0, 0],
-        [0, 2, 0],  # Z lmao
+        [0, 2, 0],
         [0, 0, 2],
         [0, 0, 0]
     ])
@@ -93,7 +92,6 @@ def show_axis(r, screen):  # recheck coordinates
     colors = [RED, GREEN, BLUE]
     i = 0
     for point in points:
-        # R = calc_r(thX, thY, thZ)  # update rotation
         rotation = np.matmul(point, r)
         px, py = rotation[0], rotation[2]
 
